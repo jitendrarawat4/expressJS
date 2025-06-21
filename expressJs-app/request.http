@@ -1,0 +1,53 @@
+### CREATE Item
+POST http://localhost:3000/api/items
+Content-Type: application/json
+
+{
+  "name": "SAmsung Watch",
+  "quantity": 1,
+  "price": 249.99
+}
+
+
+### READ All Items (unsorted)
+GET http://localhost:3000/api/items
+
+### READ All Items (sorted by price descending)
+GET http://localhost:3000/api/items?sortBy=price&order=desc
+
+### READ Single Item by ID
+GET http://localhost:3000/api/items/6846e9d93dcb5455a5dedc6c
+
+### UPDATE Item by ID
+PUT http://localhost:3000/api/items/6846e9c83dcb5455a5dedc6a
+Content-Type: application/json
+
+{
+  "name": "Updated Item",
+  "quantity": 5,
+  "price": 79.99
+}
+
+### DELETE Item by ID
+DELETE http://localhost:5000/api/items/{{itemId}}
+
+
+
+##############################################
+
+//create user 
+### CREATE Item
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+  "name": "rawat",
+  "email": "j@gmail.com",
+  "age": 22
+}
+
+### READ All Items (unsorted)
+GET http://localhost:3000/api/users
+
+### READ All Items (sorted by price descending)
+GET http://localhost:3000/api/users?sortBy=name&order=desc
